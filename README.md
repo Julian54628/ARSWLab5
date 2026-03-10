@@ -63,7 +63,7 @@ ARSWLab5
 - POST /points
   - Descripción: agrega un punto al tablero.
   - Cuerpo: JSON {x, y, color, userId}
-  - Respuesta: 200 OK (sin contenido necesario)
+  - Respuesta: 200 OK 
 - DELETE /points
   - Descripción: borra todos los puntos del tablero.
   - Respuesta: 200 OK
@@ -130,20 +130,6 @@ Resumen rápido (pasos básicos):
    java -jar target/*.jar
    (Considerar usar nohup o systemd para ejecución persistente)
 7. Asegurar que el Security Group permita tráfico al puerto 8080.
-
-## 13. Cómo conectar el frontend con el backend desplegado
-- Si el backend está en EC2 en IP pública X.Y.Z.W y acepta tráfico en 8080:
-  - Actualizar en frontend/src/api.js la constante BASE:
-    const BASE = "http://X.Y.Z.W:8080/points";
-  - Rebuild o en modo desarrollo iniciar npm start (si se usa en máquina local, permitir CORS en backend para el origen local).
-- Para producción, servir el frontend desde un servidor (nginx) y configurar proxy o usar el dominio y CORS adecuados.
-
-## 14. Posibles mejoras futuras
-- Reemplazar polling por WebSockets para latencia baja.
-- Persistencia en base de datos (Postgres/Mongo) en lugar de memoria.
-- Autenticación de usuarios y gestión de sesiones.
-- Optimizar mensajes: enviar solo diffs en vez de la lista completa.
-- Mejoras UI: grosor de pincel, formas, capas, guardar/recuperar dibujos.
 
 ## Pruebas de funcionamiento
 
