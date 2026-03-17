@@ -162,19 +162,17 @@ Resumen rápido (pasos básicos):
 
 ### Creación de la instancia EC2
 
-![EC2 instancia](images/ec2-instance.png)
+![img_6.png](img_6.png)
 
 [Espacio para screenshot de la instancia]
 
 ### Backend corriendo en AWS
 
-![Backend AWS](images/backend-aws.png)
+![img_4.png](img_4.png)
 
-[Espacio para screenshot del servidor corriendo]
+### Frontend corriendo en AWS
 
-### Prueba del tablero desde internet
-
-![Frontend en internet](images/frontend-internet.png)
+![img_7.png](img_7.png)
 
 
 
